@@ -1,0 +1,16 @@
+{
+  "name": "awa-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "install": "cd frontend && npm install",
+    "dev:client": "cd frontend && npm run dev",
+    "preinstall": "cd backend && npm install",
+    "dev:server": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

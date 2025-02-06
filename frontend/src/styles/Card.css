@@ -1,0 +1,88 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 16px;
+  margin: 8px;
+  border: 1px solid #bab8b8;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  width: 160px;
+  overflow: visible;
+  
+}
+
+.card.dragging {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: rotate(3deg) scale(1.05);
+  cursor: grabbing;
+  z-index: 1000;
+}
+
+.card:hover {
+  cursor: grab;
+}
+
+.card-content {
+  margin-bottom: 20px;
+  max-width: 150px;
+  overflow: visible;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.card h4 {
+  margin: 0;
+  font-size: 1.3em;
+  color: #171717;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.card p {
+  color: #484646;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.description {
+  max-width: 100%;
+}
+
+.card button {
+  background-color: rgb(255, 108, 108);
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.card.highlighted {
+  background-color: yellow;
+}
+
+.card.done {
+  background-color: rgb(198, 255, 198);
+}
+
+@media (max-width: 770px) {
+  .card h4 {
+    font-size: 1.8rem;
+  }
+  .card p{
+    font-size: 1.4rem;
+  }
+
+  .card button {
+    font-size: 1.1rem;
+  }
+
+  .card label {
+    font-size: 1.3rem;
+  }
+
+  .card created {
+    font-size: 1.7rem;
+  }
+}

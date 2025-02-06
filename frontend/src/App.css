@@ -1,0 +1,9 @@
+#root {
+    margin-top: 100px;
+}
+
+.board-header {
+    padding: 10px;
+    margin: 20px auto;
+    font-size: 1.8rem;
+}

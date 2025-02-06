@@ -1,0 +1,91 @@
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    flex-grow: 1;
+    width: 100%;
+    padding-bottom: 20px;
+    justify-content: flex-start;
+    overflow: visible;
+}
+
+.column .column-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: 0px;
+    width: 250px;
+    min-height: 500px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.cards {
+    padding: 20px;
+    overflow: visible;
+}
+
+.column-header h3 {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+    background-color: #abd3fb;
+}
+
+.column-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.add-card-btn {
+    background-color: rgb(113, 211, 108);
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+
+}
+
+.delete-column-btn {
+    background-color: rgb(255, 108, 108);
+    padding: 10px;
+    margin-right: 20px;
+    border: none;
+    border-radius: 20px;
+}
+
+.droppable {
+    min-height: 100px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    padding: 10px;
+    overflow: visible;
+}
+
+@media (max-width: 770px) {
+    .board {
+        padding: 10px;
+    }
+
+    .board button {
+        font-size: 0.9rem;
+    }
+
+    .add-card-btn {
+        font-size: 1.5rem;
+    
+    }
+    
+    .delete-column-btn {
+        font-size: 1.5rem;
+
+    }
+}
