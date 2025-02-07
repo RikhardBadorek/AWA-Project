@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../styles/Login.css"
 
+//Handles login and moves user to see their board
+
 const Login = () => {
     const [formData, setFormData] = useState({
         email: "",

@@ -3,6 +3,8 @@ import Column from "./Column"
 import "../styles/Board.css"
 import { DragDropContext } from "react-beautiful-dnd"
 
+// the board component handles columns and also cards in columns
+
 interface CardType {
     _id: string;
     title: string;
@@ -147,6 +149,7 @@ const Board = ({ board }: BoardProps) => {
     }
 
     const onDragEnd = async (result: any) => {
+        //From the drag result we get the columns that the draggable item was from and destination
         const {destination, source} = result
 
         if (!destination) {
@@ -163,6 +166,7 @@ const Board = ({ board }: BoardProps) => {
         if(!sourceColumn){return}
         if(!destinationColumn){return}
 
+        //If the card is moved inside the same column this functionality is used and backend is updated
         if(sourceColumn._id === destinationColumn._id) {
             const sourceCards = Array.from(sourceColumn.cards)
             const [movedCard] = sourceCards.splice(source.index, 1)
@@ -218,7 +222,7 @@ const Board = ({ board }: BoardProps) => {
             } catch (error) {
                 setError(`Error updating card and column: ${error}`);
             }
-
+            //If destination is a different column than source this functionality is used and backend updated
         } else{
             const sourceCards = Array.from(sourceColumn.cards)
             const destinationCards = Array.from(destinationColumn.cards || [])

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../styles/register.css"
 
+//Handles registeration and send user information to backend
+
 const Register = () => {
     const [formData, setFormData] = useState({
         email: "",

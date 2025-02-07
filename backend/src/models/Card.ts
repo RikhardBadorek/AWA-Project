@@ -1,5 +1,7 @@
 import mongoose, {Document, Schema} from "mongoose";
 
+//Card model that has the columnId so the right cards can be kept in the correct columns
+
 interface ICard extends Document {
     title: string
     description: string

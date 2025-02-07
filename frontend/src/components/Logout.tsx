@@ -1,6 +1,8 @@
 import {useEffect} from 'react'
 import { useNavigate } from 'react-router-dom'
 
+// Handles logout and removes JWT token
+
 const Logout = () => {
     const nav = useNavigate()
 

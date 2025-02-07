@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import Board from "./Board"
 
+//Gets the right board for the user from the backend and allows user to change the boardname by doubleclick
+
 interface BoardType {
   _id: string
   name: string

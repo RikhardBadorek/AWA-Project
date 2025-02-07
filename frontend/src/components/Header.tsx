@@ -1,6 +1,8 @@
 import { useState } from "react"
 import "../styles/header.css"
 
+//Header component that has the burger icon for smaller screens
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const openMenu = () =>setMenuOpen(!menuOpen)

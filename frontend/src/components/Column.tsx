@@ -3,6 +3,9 @@ import Card from './Card'
 import { useState } from 'react'
 import { Droppable } from "react-beautiful-dnd"
 
+//Column component handles adding and deleting cards but when cards are updated the board component is sent to update the cards.
+//I Tried to handle everything regarding cards in this component but ran into problems with drag and drop.
+
 interface CardType {
     _id: string;
     title: string;

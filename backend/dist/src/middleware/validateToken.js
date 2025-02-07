@@ -6,6 +6,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.validateToken = void 0;
 const jsonwebtoken_1 = __importDefault(require("jsonwebtoken"));
 const dotenv_1 = __importDefault(require("dotenv"));
+//This validates the JWT token on all backend calls
 dotenv_1.default.config();
 const SECRET = process.env.SECRET;
 const validateToken = (req, res, next) => {

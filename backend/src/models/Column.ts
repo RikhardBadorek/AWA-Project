@@ -1,6 +1,8 @@
 import mongoose, {Document, Schema} from "mongoose";
 import { Card } from "./Card";
 
+//Column model that has the boardId to get the correct columns for users board
+
 interface IColumn extends Document {
     name: string
     boardId: string

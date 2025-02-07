@@ -1,5 +1,7 @@
 import mongoose, {Document, Schema} from "mongoose";
 
+//Board models with userID to keep the right board for the right user
+
 interface IBoard extends Document {
     name: string
     userId: string

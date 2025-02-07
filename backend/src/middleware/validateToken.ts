@@ -2,6 +2,8 @@ import { Request, Response, NextFunction } from "express"
 import jwt, { JwtPayload } from "jsonwebtoken"
 import dotenv from "dotenv"
 
+//This validates the JWT token on all backend calls
+
 dotenv.config()
 
 const SECRET = process.env.SECRET

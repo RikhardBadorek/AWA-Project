@@ -2,6 +2,9 @@ import { useState } from "react";
 import "../styles/Card.css"
 import { Draggable } from "react-beautiful-dnd"
 
+//Card component handles the cards funtionality and when card is updated send the updated card for column and column then sends it to board
+//Not the cleanest way to do this but works
+
 interface CardType {
   _id: string;
   title: string;
